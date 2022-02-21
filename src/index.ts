@@ -1,12 +1,21 @@
-class Animal {
-    name: string;
+let passcode = 'xx';
+
+class Employee {
+    private _fullName: string = '';
+
+    get fullName(): string {
+        return this._fullName;
+    }
+    set fullName(newName: string) {
+        if (passcode && passcode === 'xxx') {
+            this._fullName = newName;
+        } else {
+            console.log('uncorrect passcode!');
+        }
+    }
 };
 
-class Dog extends Animal {
-    breed: string;
-};
+let e = new Employee();
+e.fullName = 'bob';
 
-interface Okay {
-    [x: number]: string;
-    [y: string]: string | null | number;
-}
+console.log(e.fullName);
