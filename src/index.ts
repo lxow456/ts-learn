@@ -6,16 +6,16 @@ class Employee {
     get fullName(): string {
         return this._fullName;
     }
-    set fullName(newName: string) {
-        if (passcode && passcode === 'xxx') {
-            this._fullName = newName;
-        } else {
-            console.log('uncorrect passcode!');
-        }
-    }
+    // set fullName(newName: string) {
+    //     if (passcode && passcode === 'xxx') {
+    //         this._fullName = newName;
+    //     } else {
+    //         console.log('uncorrect passcode!');
+    //     }
+    // }
 };
 
 let e = new Employee();
-e.fullName = 'bob';
+e.fullName
 
 console.log(e.fullName);
