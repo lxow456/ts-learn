@@ -1,1 +1,1 @@
-let name = 'qc';
+let name = 'index.js';
