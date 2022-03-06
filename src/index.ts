@@ -10,4 +10,3 @@ let obj2: GenericIndentityFn<number> = {
     defaultValue: 100
 };
 
-let str = 'lx';
