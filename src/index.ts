@@ -11,4 +11,5 @@ let obj2: GenericIndentityFn<number> = {
 };
 
 let str = 'index.ts';
+let str2 = 'index.ts2';
 
