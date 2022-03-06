@@ -1,12 +1,11 @@
-class Animal {
-    name: string;
+interface GenericIndentityFn<T> {
+    defaultValue: T;
 };
 
-class Dog extends Animal {
-    breed: string;
+let obj: GenericIndentityFn<string> = {
+    defaultValue: 'xxx'
 };
 
-interface Okay {
-    [x: number]: string;
-    [y: string]: string | null | number;
-}
+let obj2: GenericIndentityFn<number> = {
+    defaultValue: 100
+};
