@@ -1,12 +1,11 @@
-let passcode = 'xx';
-
-class Employee {
-    private _fullName: string = '';
-
-    get fullName(): string {
-        return this._fullName;
-    }
+interface GenericIndentityFn<T> {
+    defaultValue: T;
 };
 
-let e = new Employee();
-e.fullName;
+let obj: GenericIndentityFn<string> = {
+    defaultValue: 'xxx'
+};
+
+let obj2: GenericIndentityFn<number> = {
+    defaultValue: 100
+};
