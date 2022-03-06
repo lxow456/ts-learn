@@ -9,7 +9,4 @@ let obj: GenericIndentityFn<string> = {
 let obj2: GenericIndentityFn<number> = {
     defaultValue: 100
 };
-<<<<<<< HEAD
-=======
 let str = 'lx';
->>>>>>> dev
