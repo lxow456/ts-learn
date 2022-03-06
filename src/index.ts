@@ -12,3 +12,4 @@ let obj2: GenericIndentityFn<number> = {
 let str = 'lx';
 
 console.log(str);
+let str2 = 'qc';
